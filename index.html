@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Home | Start</title>
+<link href="lib/styles/main_style.css" media="screen" rel="stylesheet" type="text/css" />
+<script>
+ function login_as_admin() {
+	location.assign("admin/login.php");
+	}
+	
+ function login_as_user() {
+	location.assign("user/login.php");
+	}
+</script>
+</head>
+
+<body>
+
+<table class="container" align="center">
+<tr><td>
+
+<h1>Company Name</h1>
+
+<hr />
+
+<div align="center">
+
+<fieldset>
+
+	<table border="0" cellpadding="6" cellspacing="1" width="400px">
+
+<tr>
+	<th colspan="2"><img src ="lib/images/lock.ico" align="baseline"/> LOGIN AS</th>
+</tr>
+
+<tr>
+	<td align="center"><button class="button" onclick="login_as_admin();">Administrator</button></td>
+	
+</tr>
+<tr>
+	<td align="center"><button class="button" onclick="login_as_user();"><span>User</button></td>
+
+</tr>
+
+<!--<tr>
+	<td>&nbsp;</td>
+	<td>
+		<span class="button"><input class="submit" type="submit" name="login" value="Login" title="Login"></span>
+		<span class="button"><input class="submit" type="reset" value="Cancel" title="Cancel" ></span>
+	</td>
+</tr>-->
+<!--<tr>
+  <td colspan="2"><img src ="lib/images/admin.ico" /> <a href="admin/index.php">Login as Administrator</a> </td>
+</tr>-->
+</table></fieldset>
+
+</div>	
+</td></tr></table>
+</body>
+</html>

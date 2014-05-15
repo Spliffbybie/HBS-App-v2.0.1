@@ -1,0 +1,11 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^(.*)\.htm$ $1.php [nc]
+
+RewriteRule ^product-([0-9]+)\.htm$
+products.php?id=$1 
+
+RewriteEngine On
+RewriteCond %{HTTPS}!On
+RewriteRule(.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
